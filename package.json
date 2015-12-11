@@ -14,6 +14,10 @@
     "dotenv": "^1.2.0"
   },
   "scripts": {
-    "start": "node keystone.js"
+    "start": "node keystone.js",
+    "dev": "nodemon keystone.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
   }
 }

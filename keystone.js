@@ -21,8 +21,7 @@ keystone.init({
 
 	'auto update': true,
 	'mongo': process.env.MONGO_URI || process.env.MONGOLAB_URI || 'mongodb://localhost/keystone-demo',
-	'cloudinary config': 'cloudinary://333779167276662:_8jbSi9FB3sWYrfimcl8VKh34rI@keystone-demo',
-
+	'cloudinary config': 'cloudinary://695493484114853:WgUtCyrmjr2usz_b9xeIdxBbcYY@dcc1ioxla',
 	'session': true,
 	'auth': true,
 	'user model': 'User',
@@ -58,5 +57,7 @@ keystone.set('nav', {
 	'users': 'users',
 	'field-tests': 'things'
 });
+
+keystone.set('cors allow origin', true);
 
 keystone.start();

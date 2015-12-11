@@ -27,6 +27,7 @@ exports.theme = function (req, res, next) {
 	next();
 };
 
+
 exports.flashMessages = function (req, res, next) {
 	var flashMessages = {
 		info: req.flash('info'),
